@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library-app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap-content">
+        <h1><i>My library</i></h1>
+        <p id="count"><i></i></p>
+        <div class="button-add">
+            <button onclick="openDisplay()">Add book</button>
+        </div>
+
+        <div id="library-wrap"></div>
+
+        <div class="overlay" id="overlay">
+            <div class="modal">
+                <div class="label-input">
+                    <label for="judul">Title</label>
+                    <input type="text" id="judul" placeholder="title">
+                </div>
+                <div class="label-input">
+                    <label for="penulis">Writter</label>
+                    <input type="text" id="penulis" placeholder="writter">
+                </div>
+                <div class="label-input">
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" placeholder="pages">
+                </div>
+                <div class="action-btn" id="action-btn">
+                    <button onclick="submitBook()">Add</button>
+                    <button onclick="closeDisplay()">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
